@@ -335,7 +335,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -435,8 +435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be0feaeb10463ca48a41b5b79c56e275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfSicklings: 10
-  amountOfIllSicklings: 1
+  amountOfSicklings: 100
+  amountOfIllSicklings: 4
   sicklingPrefab: {fileID: 2083844972}
   sicklings: []
   sicklingObjects: []
@@ -564,10 +564,6 @@ PrefabInstance:
     - target: {fileID: 7542592473452504536, guid: a29b9a3b69d7d1c41b5e1366521d348b, type: 3}
       propertyPath: m_Name
       value: Sickling
-      objectReference: {fileID: 0}
-    - target: {fileID: 7542592473452504536, guid: a29b9a3b69d7d1c41b5e1366521d348b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

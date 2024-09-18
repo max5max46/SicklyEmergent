@@ -4,21 +4,33 @@ using UnityEngine;
 
 public class Sickling : MonoBehaviour
 {
-    [HideInInspector] public bool isSick;
+    [Header("Properties")]
+    [SerializeField] private float speed = 1;
+    [SerializeField] private float visionDistance = 10;
+    [SerializeField] private Color healthyColor;
+    [SerializeField] private Color sickColor;
 
-    private float direction;
-    private float speed = 1;
+    [HideInInspector] public bool isSick;
+    [HideInInspector] public float[] distanceFromOtherSicklings;
 
     // Start is called before the first frame update
     void Start()
     {
-        direction = Random.Range(0f, 360f);
-        transform.Rotate(new Vector3(0f, 0f, direction));
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!isSick)
+        {
+            transform.GetComponent<SpriteRenderer>().color = healthyColor;
+        }
+        else
+        {
+            transform.GetComponent<SpriteRenderer>().color = sickColor;
+        }
+
         transform.position += transform.up * Time.deltaTime * speed;
     }
 }
