@@ -15,7 +15,7 @@ public class SicklingsManager : MonoBehaviour
     [HideInInspector] public GameObject[] sicklingObjects;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         sicklings = new Sickling[amountOfSicklings];
         sicklingObjects = new GameObject[amountOfSicklings];
@@ -36,9 +36,9 @@ public class SicklingsManager : MonoBehaviour
             {
                 int randomIndex = Random.Range(0, sicklings.Length - 1);
 
-                if (!sicklings[randomIndex].isSick)
+                if (!sicklings[randomIndex].isIll)
                 {
-                    sicklings[randomIndex].isSick = true;
+                    sicklings[randomIndex].isIll = true;
                     infectedASickling = true;
                 }
             }

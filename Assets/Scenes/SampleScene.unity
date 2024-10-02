@@ -565,6 +565,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sickling
       objectReference: {fileID: 0}
+    - target: {fileID: 8216801356942178699, guid: a29b9a3b69d7d1c41b5e1366521d348b, type: 3}
+      propertyPath: sicklingManager
+      value: 
+      objectReference: {fileID: 1985916413}
+    - target: {fileID: 8216801356942178699, guid: a29b9a3b69d7d1c41b5e1366521d348b, type: 3}
+      propertyPath: otherSicklings.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216801356942178699, guid: a29b9a3b69d7d1c41b5e1366521d348b, type: 3}
+      propertyPath: distanceToKeepFromSicklings
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8216801356942178699, guid: a29b9a3b69d7d1c41b5e1366521d348b, type: 3}
+      propertyPath: otherSicklings.Array.data[0]
+      value: 
+      objectReference: {fileID: 1985916411}
+    - target: {fileID: 8216801356942178699, guid: a29b9a3b69d7d1c41b5e1366521d348b, type: 3}
+      propertyPath: distanceToKeepFromIllSicklings
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
