@@ -97,6 +97,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d46cca0a354674ab864259626bd92d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthySpeed: 1
+  illSpeed: 1
+  chaseMode: 1
+  distanceToKeepFromSicklings: 1
+  distanceToKeepFromIllSicklings: 2
+  distanceToGetIll: 1.5
+  timeToGetIll: 2
+  minStepTime: 1
+  maxStepTime: 3
+  negXBorder: -10
+  posXBorder: 10
+  negYBorder: -6
+  posYBorder: 6
   healthyColor: {r: 0.5424528, g: 0.6574787, b: 1, a: 1}
   sickColor: {r: 0.691396, g: 0.990566, b: 0.58406013, a: 1}
-  isSick: 0
+  sicklingManager: {fileID: 0}
+  isIll: 0
